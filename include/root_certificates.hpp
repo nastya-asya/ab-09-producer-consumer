@@ -49,4 +49,4 @@ inline void load_root_certificates(ssl::context& ctx) {
   detail::load_root_certificates(ctx, ec);
   if (ec) throw boost::system::system_error{ec};
 }
-#endif // INCLUDE_ROOT_CERTIFICATES_HPP_
+#endif  // INCLUDE_ROOT_CERTIFICATES_HPP_
