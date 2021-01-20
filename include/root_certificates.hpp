@@ -38,7 +38,7 @@ void load_root_certificates(ssl::context& ctx, boost::system::error_code& ec) {
                                 ec);
   if (ec) return;
 }
-}
+}  // namespace detail
 inline void load_root_certificates(ssl::context& ctx,
                                    boost::system::error_code& ec) {
   detail::load_root_certificates(ctx, ec);
